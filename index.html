@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         window.addEventListener('message', function(event) {
-          // Проверяем источник сообщения для безопасности
-          if (event.origin !== 'https://внутренний.домен') return;
-        
           // Обрабатываем полученное сообщение
           console.log('Получено сообщение от внутреннего фрейма:', event.data);
         }, false);
